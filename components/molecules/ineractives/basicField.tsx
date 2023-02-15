@@ -40,7 +40,7 @@ const Field = forwardRef(
 Field.displayName = 'Field';
 
 
-interface BasicFieldProps {
+export interface BasicFieldProps {
     /**
      * Autocomplete attribute to provide automated assistance in filling out form field values
      */
@@ -126,26 +126,6 @@ interface BasicFieldProps {
      */
     value?: string | number;
   }
-
-interface BasicFieldProps {
-  autoComplete?: string;
-  className?: string;
-  defaultValue?: string | number;
-  disabled?: boolean;
-  errorOpened?: boolean;
-  errorText?: React.ReactNode;
-  id?: string;
-  label?: string;
-  loading?: boolean;
-  locked?: boolean;
-  name: string;
-  placeholder?: string;
-  readOnly?: boolean;
-  required?: boolean;
-  state?: 'alert' | 'error' | 'info' | 'initial' | 'primary' | 'valid';
-  type?: 'text' | 'password' | 'email' | 'textarea' | 'hidden';
-  value?: string | number;
-}
 
 const BasicField = forwardRef<HTMLInputElement, BasicFieldProps>(
   (
