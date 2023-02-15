@@ -1,0 +1,68 @@
+.input-text {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 3px;
+    color: var(--main-font-color);
+    font-size: 15px;
+    margin: 0;
+    min-height: 40px;
+    opacity: 1;
+    outline: none;
+    padding: 0;
+    padding-left: 15px;
+    transition: border .1s ease, box-shadow .1s ease, opacity .2s ease, background-color .2s ease;
+    width: 100%;
+
+    &::placeholder {
+        color: var(--silver);
+    }
+
+    &:hover {
+        box-shadow: 0 0 0;
+    }
+
+    &:focus {
+        border-color: var(--input-border-color);
+        box-shadow: 0 0 0;
+    }
+
+    //STATES
+
+    &--alert,
+    &--valid,
+    &--error,
+    &--info,
+    &--primary {
+        border-color: var(--select-border-color);
+        box-shadow: 0 0 0 1px var(--select-border-color);
+    }
+
+    &--alert {
+        --select-border-color: var(--alert);
+    }
+
+    &--valid {
+        --select-border-color: var(--valid);
+    }
+
+    &--error {
+        --select-border-color: var(--error);
+    }
+
+    &--info {
+        --select-border-color: var(--info);
+    }
+
+    &--primary {
+        --select-border-color: var(--primary);
+    }
+
+    &:disabled,
+    &:read-only {
+        pointer-events: none;
+    }
+
+    &:disabled {
+        opacity: .5;
+    }
+}
