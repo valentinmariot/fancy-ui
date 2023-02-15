@@ -27,10 +27,6 @@ export default {
     },
 } as Meta;
 
-
 const TemplatePlayground = (args: ButtonProps) => <Button {...args} />;
 
 export const Playground = TemplatePlayground.bind({});
-
-
-
