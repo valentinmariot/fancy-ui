@@ -1,0 +1,18 @@
+.a-a {
+    color: var(--primary);
+    font-size: 15px;
+    text-decoration: none;
+    transition: color .2s ease;
+
+    &--ul {
+        text-decoration: underline;
+    }
+
+    &:hover {
+        color: var(--primary_hover);
+    }
+
+    &:active {
+        color: var(--primary_active);
+    }
+}
