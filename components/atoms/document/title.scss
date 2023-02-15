@@ -1,0 +1,31 @@
+.a-title {
+    font-family: var(--main-font);
+    font-weight: 500;
+
+    // Used on onboarding
+    &--xxlarge {
+        font-size: 30px;
+    }
+
+    // Used on login/signin
+    &--xlarge {
+        font-size: 25px;
+    }
+
+    // Used mainly on nuage webapp
+    &--large {
+        font-size: 22px;
+    }
+
+    &--medium {
+        font-size: 20px;
+    }
+
+    &--small {
+        font-size: 18px;
+    }
+
+    &--xsmall {
+        font-size: 16px;
+    }
+}
