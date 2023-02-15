@@ -1,18 +1,36 @@
-import { Meta }  from '@storybook/react';
-import Button from '../../../components/atoms/forms/button';
+import { Meta } from '@storybook/react';
+import Button, { ButtonProps } from '../../../components/atoms/forms/button';
 
 export default {
-  /* 👇 The title prop is optional.
-  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
-  * to learn how to generate automatic titles
-  */
-  title: 'Atoms/Forms',
-  component: Button,
-  parameters: {
-    docs: {
-      page: null,
+    title: 'Atoms/Forms/Button',
+    component: Button,
+    argTypes: {
+        children: {
+            control: {
+                type: 'text',
+            },
+        },
+        title: {
+            control: {
+                type: 'text',
+            },
+        },
+        type: {
+            control: false,
+        },
+        className: {
+            control: false,
+        },
+        onClick: {
+            control: false,
+        },
     },
-  },
 } as Meta;
 
-export const ButtonStory = () => <Button>Hello</Button>
+
+const TemplatePlayground = (args: ButtonProps) => <Button {...args} />;
+
+export const Playground = TemplatePlayground.bind({});
+
+
+
