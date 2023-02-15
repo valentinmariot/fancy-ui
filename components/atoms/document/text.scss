@@ -1,0 +1,9 @@
+@import '../../css/vars/mixins';
+
+.a-text {
+    font-size: 15px;
+
+    &--loading {
+        @include loading-state-text(15px);
+    }
+}
