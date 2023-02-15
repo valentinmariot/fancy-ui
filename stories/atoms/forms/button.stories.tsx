@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import Button, { ButtonProps } from '../../../components/atoms/forms/button';
+import Button, { ButtonProps } from '../../../components/atoms/form/button';
 
 export default {
     title: 'Atoms/Forms/Button',
