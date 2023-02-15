@@ -1,8 +1,12 @@
-import '../styles/globals.css'
+import { FC } from 'react';
 import '../styles/globals.scss'
 
+interface IApp {
+  Component: React.FC
+  pageProps: any
+}
 /** @param {import('next/app').AppProps} props */
-function MyApp({ Component, pageProps }) {
+const MyApp:FC<IApp> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 
