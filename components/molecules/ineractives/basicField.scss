@@ -1,0 +1,55 @@
+@import '../../css/vars/mixins';
+
+.field-text {
+    width: 100%;
+
+    &__elt {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    &__loading-bar {
+        height: calc(100% - 10px);
+        left: 5px;
+        position: absolute;
+        top: 5px;
+        width: calc(100% - 10px);
+
+        &::after {
+            @include loading-state-text;
+            content: '';
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    &__right-icon {
+        color: var(--primary);
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &--rightIcon {
+        .input-text {
+            padding-right: 40px;
+        }
+    }
+
+    &--loading {
+        .input-text {
+            color: transparent;
+        }
+    }
+
+    &--disabled,
+    &--locked {
+        cursor: not-allowed;
+
+        .label {
+            pointer-events: none;
+        }
+    }
+}
