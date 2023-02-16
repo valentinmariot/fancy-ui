@@ -2,42 +2,8 @@ import React, { forwardRef, Ref } from 'react';
 
 import Label from 'components/atoms/form/label';
 import InputText from '../../atoms/form/inputText';
-import Textarea from '../../atoms/form/textarea';
 
 import './basicField.scss';
-
-type FieldProps = {
-    type: string;
-    autoComplete?: string;
-    className?: string;
-    defaultValue?: string | number;
-    disabled?: boolean;
-    id?: string;
-    locked?: boolean;
-    name?: string;
-    onBlur?: (event: React.FocusEvent<HTMLTextAreaElement>) => void;
-    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-    placeholder?: string;
-    readOnly?: boolean;
-    required?: boolean;
-    rightIcon?: string;
-    state?: string;
-    tabIndex?: number;
-    value?: string | number;
-};
-
-const Field = forwardRef(
-    (props: FieldProps, ref: Ref<HTMLTextAreaElement>) => {
-        switch (props.type) {
-            case 'textarea':
-                return <Textarea {...props} ref={ref as Ref<HTMLTextAreaElement>} />;
-            default:
-                return <InputText {...props} ref={ref as Ref<HTMLInputElement>} />;
-        }
-    },
-);
-
-Field.displayName = 'Field';
 
 
 export interface BasicFieldProps {
@@ -169,7 +135,7 @@ const BasicField = forwardRef<HTMLInputElement, BasicFieldProps>(
       )}
       <div className="field-text__elt">
         {loading && <div className="field-text__loading-bar" />}
-        <Field
+        <InputText
           autoComplete={autoComplete}
           className={type === 'textarea' ? '' : 'field-text__input'}
           defaultValue={defaultValue}
@@ -192,3 +158,5 @@ const BasicField = forwardRef<HTMLInputElement, BasicFieldProps>(
 );
 
 BasicField.displayName = 'BasicField';
+
+export default BasicField;
