@@ -3,6 +3,7 @@
 .btn {
   &--primary {
     @include mainButton()
+
   }
 
   &--secondary {
@@ -16,4 +17,8 @@
   &--destructive {
     @include mainButton($background: var(--destructive))
   }
+  &:hover:after {
+    content:'...Insérer icone';
+  }
+
 }

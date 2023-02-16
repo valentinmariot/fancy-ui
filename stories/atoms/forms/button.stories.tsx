@@ -34,6 +34,7 @@ const TemplateDisabled = (args: ButtonProps) => <Button {...args} className='btn
 
 export const Playground = TemplatePlayground.bind({});
 export const Primary = TemplatePrimary.bind({});
+
 export const Secondary= TemplateSecondary.bind({});
 export const Destructive = TemplateDestructive.bind({});
 export const Disabled = TemplateDisabled.bind({});

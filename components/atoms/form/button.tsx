@@ -27,6 +27,7 @@ const Button: FC<ButtonProps> = ({
     tabIndex = 0,
     title = '',
     type,
+
 }) => {
     let classes = 'btn';
     for (let i = 0; i < params.length; i += 1) {
