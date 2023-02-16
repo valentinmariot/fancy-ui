@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import './button.scss';
 
+
 export interface ButtonProps {
     children: React.ReactNode;
     className?: string;
@@ -30,7 +31,7 @@ const Button: FC<ButtonProps> = ({
     let classes = 'btn';
     for (let i = 0; i < params.length; i += 1) {
         const param = params[i];
-        classes += ` btn--${param}`;
+        classes += `btn--${param}`;
     }
     classes += ` ${className}`;
     classes = classes.trim();

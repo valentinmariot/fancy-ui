@@ -1,49 +1,70 @@
 // --- M I X I N S --- //
 
-:root{
-    --shadow: 0px 0px 15px var(--black-lighter);
+:root {
+  --shadow: 0px 0px 15px var(--black-lighter);
 
-    // SPACING
-    --1m: 8px;
-    --05m: calc(var(--1m) / 2);
-    --2m: calc(2 * var(--1m));
-    --3m: calc(3 * var(--1m));
-    --4m: calc(2 * var(--2m));
-    --5m: calc(5 * var(--1m));
-    --6m: calc(2 * var(--3m));
-    --7m: calc(7 * var(--1m));
-    --8m: calc(2 * var(--4m));
-    --9m: calc(9 * var(--1m));
-    --10m: calc(2 * var(--5m));
+  // SPACING
+  --1m: 8px;
+  --05m: calc(var(--1m) / 2);
+  --2m: calc(2 * var(--1m));
+  --3m: calc(3 * var(--1m));
+  --4m: calc(2 * var(--2m));
+  --5m: calc(5 * var(--1m));
+  --6m: calc(2 * var(--3m));
+  --7m: calc(7 * var(--1m));
+  --8m: calc(2 * var(--4m));
+  --9m: calc(9 * var(--1m));
+  --10m: calc(2 * var(--5m));
 
-    // SIZES
-    --xs: 12px;
-    --s: 14px;
-    --m: 16px;
-    --l: 18px;
-    --xl: 20px;
-    --xxl: 24px;
-    --3xl: 32px;
-    --4xl: 48px;
+  // SIZES
+  --xs: 12px;
+  --s: 14px;
+  --m: 16px;
+  --l: 18px;
+  --xl: 20px;
+  --xxl: 24px;
+  --3xl: 32px;
+  --4xl: 48px;
 }
 
 @mixin flexRow() {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
 @mixin flexColumn() {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 @mixin grid2() {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: var(--2m);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--2m);
+}
+
+@mixin mainButton(
+  $background: var(--primary),
+  $color: var(--white)
+) {
+
+  align-items: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: $color;
+  display: inline-flex;
+  justify-content: center;
+  outline: 0;
+  padding: var(--1m) var(--2m);
+  border-radius: var(--1m);
+  transition: background ease-in-out .2s, border-color ease-in-out .2s, color ease-in-out .2s, filter ease-in-out .2s;
+  background: $background;
+
 }
