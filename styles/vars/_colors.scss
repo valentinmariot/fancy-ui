@@ -1,141 +1,51 @@
 // --- C O L O R S --- //
 
-// PRIMARY
-$--primary: #b794f4;
-$--primary_hover: #7e5b9f;
-$--primary_active: #c9b6f4;
-$--primary_opacity: #c9b6f480;
-$--primary_transparent: #b794f400;
+:root{
+  --light: .7;
+  --lighter: .4;
 
-// SECONDARY
-$--secondary: #1cc6d9;
-$--secondary_hover: #107682;
-$--secondary_active: #76dce8;
-$--secondary_transparent: #1cc6d900;
+  /*Primary color*/
+  --primary-rgb: 75, 122, 220 ;
+  --primary: rgb(var(--primary-rgb));
+  --primary-light: rgb(var(--primary-rgb), var(--light));
+  --primary-lighter: rgb(var(--primary-rgb), var(--lighter));
 
-// GENERALS
-$--white: #fff;
-$--egg: #f6f6f6;
-$--nero: #333;
-$--black: #222;
-$--vanta: #000;
-$--grey: #d3d3d3;
-$--davy: #555;
-$--chalice: #b1b1b1;
-$--silver: #7f7f7f;
+  /*Secondary color*/
+  --secondary-rgb: 248, 238, 186 ;
+  --secondary: rgb(var(--secondary-rgb));
+  --secondary-light: rgb(var(--secondary-rgb), var(--light));
+  --secondary-lighter: rgb(var(--secondary-rgb), var(--lighter));
 
-// TRANSPARENTS
-$--vanta20: #33333333;
-$--vanta45: #33333373;
-$--vanta80: #333333cc;
-$--grey20: #d3d3d333;
-$--grey45: #d3d3d373;
-$--grey80: #d3d3d3cc;
-$--egg20: #f6f6f633;
-$--egg45: #f6f6f673;
-$--egg80: #f6f6f6cc;
+  /*Destructive color*/
+  --destructive-rgb: 226, 103, 103 ;
+  --destructive: rgb(var(--destructive-rgb));
+  --destructive-light: rgb(var(--destructive-rgb), var(--light));
+  --destructive-lighter: rgb(var(--destructive-rgb), var(--lighter));
 
-// INFO STATE
-$--info: #5490fa;
-$--info_hover: #325696;
-$--info_active: #70798a;
+  /*Black color*/
+  --black-rgb: 35, 24, 7 ;
+  --black: rgb(var(--black-rgb));
+  --black-light: rgb(var(--black-rgb), var(--light));
+  --black-lighter: rgb(var(--black-rgb), var(--lighter));
 
-// VALID STATE
-$--valid: #63e3a3;
-$--valid_hover: #3a7e3e;
-$--valid_active: #a0e4a4;
-
-// ALERT STATE
-$--alert: #f8ca1a;
-$--alert_hover: #94790f;
-$--alert_active: #fadf75;
-
-// ERROR STATE
-$--error: #ff4d4c;
-$--error_hover: #992e2d;
-$--error_active: #ff9493;
-
-// COLORS - FUNCTIONS
-$--aquarius: #00d2ff;
-$--aquila: #caf0f8;
-$--draco: #39ffab;
-$--canis: #4361ee;
-$--capricornus: #f72585;
-$--cassiopeia: #ffbf69;
-$--cepheus: #61d368;
-$--corona: #4895ef;
-$--crux: #a161d5;
-$--cygnus: #3f37c9;
-$--gemini: #ff006e;
-$--leo: #ff8559;
-$--libra: #3a86ff;
-$--lynx: #0081af;
-$--metamask: #F5841F;
-$--orion: #7209b7;
-$--perseus: #4cc9f0;
-$--puppis: #90e0ef;
-$--scorpius: #ff6f91;
-$--serpens: #ed68b5;
-$--taurus: #fb5607;
-$--ursa: #ff9f1c;
-$--virgo: #8338ec;
-
-$--transparent: #fff0;
-$--input-bg-color-transparent: #fff0;
-$--input-border-color-transparent: #d3d3d300;
-
-// Main colors
-$--main-bg-color: $--egg;
-$--helvetica-color: $--nero;
-$--helvetica-hover-color: $--vanta;
-$--main-focus-color: $--primary;
-
-// Input colors
-$--input-bg-color: $--white;
-$--input-border-color: $--grey;
-$--input-active-color: $--chalice;
-$--segmented-control-border-color: $--davy;
-$--segmented-control-font-color: $--nero;
-
-// Toolbar colors
-$--toolbar-bg-color: $--vanta;
-$--toolbar-bg-color-hover: $--nero;
-$--toolbar-font-color: $--white;
-
-// Grey Icons Color
-$--grey-icon-color: $--silver;
-$--grey-icon-color_hover: $--davy;
-$--grey-icon-color_active: $--grey;
-
-
-
-// FUTUR DARK MODE ?
-// .theme--dark {
-//     // Transparence here for safari's sake
-//     $--transparent: #0000;
-//     $--input-bg-color-transparent: #3330;
-//     $--input-border-color-transparent: #5550;
-
-//     // Main colors
-//     $--main-bg-color: $--black;
-//     $--helvetica-color: $--white;
-//     $--helvetica-hover-color: $--egg;
-//     $--main-focus-color: $--primary;
-
-//     // Input colors
-//     $--input-bg-color: $--nero;
-//     $--input-border-color: $--davy;
-//     $--input-active-color: $--silver;
-//     $--segmented-control-border-color: $--silver;
-//     $--segmented-control-font-color: $--egg;
-
-//     // Toolbar colors
-//     $--toolbar-bg-color: $--white;
-//     $--toolbar-bg-color-hover: $--grey;
-//     $--toolbar-font-color: $--nero;
-
-//     // Grey Icons Color
-//     $--grey-icon-color: $--silver;
-//     $--grey-icon-color_hover: $--grey;
-//     $--grey-icon-color_active: $--davy;
-// }
+  /*White color*/
+  --white-rgb: 249, 249, 249 ;
+  --white: rgb(var(--white-rgb));
+  --white-light: rgb(var(--white-rgb), var(--light));
+  --white-lighter: rgb(var(--white-rgb), var(--lighter));
+}
+.white{
+  color: var(--white);
+}
+.black{
+  color: var(--black);
+}
+.primary{
+  color: var(--primary);
+}
+.secondary{
+  color: var(--secondary);
+}
+.destructive{
+  color: var(--destructive);
+}

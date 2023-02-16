@@ -1,7 +1,10 @@
-
-.a-text {
-    font-size: 15px;
-
-    &--loading {
-    }
+.bold-paragraph{
+    font-weight: 700;
+}
+.small-paragraph{
+    font-size: var(--xs);
+    line-height: var(--m);
+}
+.button{
+    @include button();
 }

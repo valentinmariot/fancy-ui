@@ -1,8 +1,15 @@
 /* Box sizing rules */
+:root{
+    --duree-animation: .3s;
+    --ease-animation: ease-in-out;
+}
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    animation: var(--duree-animation) var(--ease-animation);
 }
 
 /* Remove default margin */
