@@ -1,45 +1,49 @@
 // --- M I X I N S --- //
 
-// SPACING
-$--1m: 8px;
-$--2m: calc(2 * $--1m);
-$--3m: calc(3 * $--1m);
-$--4m: calc(4 * $--1m);
-$--5m: calc(5 * $--1m);
-$--10m: calc(2 * $--5m);
+:root{
+    --shadow: 0px 0px 15px var(--black-lighter);
 
-// SIZES
-$--xs: 12px;
-$--s: 16px;
-$--m: 20px;
-$--l: 24px;
-$--xl: 30px;
-$--xxl: 36px;
-$--3xl: 64px;
-$--4xl: 128px;
+    // SPACING
+    --1m: 8px;
+    --05m: calc(var(--1m) / 2);
+    --2m: calc(2 * var(--1m));
+    --3m: calc(3 * var(--1m));
+    --4m: calc(2 * var(--2m));
+    --5m: calc(5 * var(--1m));
+    --6m: calc(2 * var(--3m));
+    --7m: calc(7 * var(--1m));
+    --8m: calc(2 * var(--4m));
+    --9m: calc(9 * var(--1m));
+    --10m: calc(2 * var(--5m));
 
-// EFFECTS
-@mixin spin($duration: 5000ms, $from: 0deg, $to: 360deg) {
-    animation-duration: $duration;
-    animation-iteration-count: infinite;
-    animation-name: spin;
-    animation-timing-function: linear;
-    user-select: none;
-    @keyframes spin {
-        from { transform:rotate($from); }
-        to { transform:rotate($to); }
-    }
+    // SIZES
+    --xs: 12px;
+    --s: 14px;
+    --m: 16px;
+    --l: 18px;
+    --xl: 20px;
+    --xxl: 24px;
+    --3xl: 32px;
+    --4xl: 48px;
 }
 
-@mixin glassMorphism(
-    $bg-color: $--vanta80,
-    $blur: 1.5px,
-    $border-color: $--vanta20,
-    $boxShadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-) {
-    background: $bg-color;
-    border: 1px solid $border-color;
-    box-shadow: $boxShadow;
-    backdrop-filter: blur($blur);
-    -webkit-backdrop-filter: blur($blur);
+@mixin flexRow() {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexColumn() {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin grid2() {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--2m);
 }

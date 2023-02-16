@@ -1,31 +1,34 @@
-.a-title {
-    font-family: var(--main-font);
-    font-weight: 500;
-
-    // Used on onboarding
-    &--xxlarge {
-        font-size: 30px;
-    }
-
-    // Used on login/signin
-    &--xlarge {
-        font-size: 25px;
-    }
-
-    // Used mainly on nuage webapp
-    &--large {
-        font-size: 22px;
-    }
-
-    &--medium {
-        font-size: 20px;
-    }
-
-    &--small {
-        font-size: 18px;
-    }
-
-    &--xsmall {
-        font-size: 16px;
-    }
+.title1{
+    font-family: var(--title-font);
+    font-size: var(--4xl);
+    line-height: var(--7m);
+    text-align: center;
+}
+.title2{
+    font-size: var(--3xl);
+    font-family: var(--text-font);
+    line-height: var(--5m);
+    text-align: center;
+    font-weight: 800;
+}
+.title3{
+    font-size: var(--xxl);
+    font-family: var(--text-font);
+    line-height: var(--3xl);
+    text-align: center;
+    font-weight: 800;
+}
+.title4{
+    font-size: var(--xl);
+    font-family: var(--text-font);
+    line-height: var(--xxl);
+    text-align: center;
+    font-weight: 700;
+}
+.title5{
+    font-size: var(--l);
+    font-family: var(--text-font);
+    line-height: var(--xl);
+    text-align: center;
+    font-weight: 600;
 }

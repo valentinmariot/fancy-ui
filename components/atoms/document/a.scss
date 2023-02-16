@@ -1,18 +1,13 @@
-.a-a {
+.a-a{
     color: var(--primary);
-    font-size: 15px;
-    text-decoration: none;
-    transition: color .2s ease;
-
-    &--ul {
-        text-decoration: underline;
+    font-family: var(--text-font);
+    text-transform: capitalize;
+    text-decoration: underline var(--primary) !important;
+    &:hover{
+        color: var(--primary-light) !important;
+        text-decoration: underline var(--primary-light) !important;
     }
-
-    &:hover {
-        color: var(--primary_hover);
-    }
-
-    &:active {
-        color: var(--primary_active);
+    &:focus{
+        text-decoration: none !important;
     }
 }

@@ -2,12 +2,19 @@
 @import './vars/index.scss';
 
 html {
-  color: $--helvetica-color;
-  font-family: $--helvetica;
-  background-color: $--egg;
+  color: var(--black);
+  font-family: var(--text-font);
+  background: var(--white);
+  line-height: var(--xl);
   font-weight: 400;
+  font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
 }
-
+p{
+  white-space: pre-line;
+}
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
