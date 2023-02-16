@@ -29,8 +29,8 @@ export default {
 const TemplatePlayground = (args: ButtonProps) => <Button {...args} />;
 const TemplatePrimary = (args: ButtonProps) => <Button {...args} className='btn--primary'>Lorem ipsum</Button>;
 const TemplateSecondary= (args: ButtonProps) => <Button {...args} className='btn--secondary' >Lorem ipsum</Button>;
-const TemplateDestructive = (args: ButtonProps) => <Button {...args} className='btn--disabled'/>;
-const TemplateDisabled = (args: ButtonProps) => <Button {...args} className='btn--destructive'/>;
+const TemplateDestructive = (args: ButtonProps) => <Button {...args} className='btn--destructive'>Lorem ipsum</Button>;
+const TemplateDisabled = (args: ButtonProps) => <Button {...args} className='btn--disabled'>Lorem ipsum</Button>;
 
 export const Playground = TemplatePlayground.bind({});
 export const Primary = TemplatePrimary.bind({});

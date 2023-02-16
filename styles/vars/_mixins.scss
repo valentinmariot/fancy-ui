@@ -66,5 +66,7 @@
   border-radius: var(--1m);
   transition: background ease-in-out .2s, border-color ease-in-out .2s, color ease-in-out .2s, filter ease-in-out .2s;
   background: $background;
+  text-transform: uppercase;
+  font-weight: 800;
 
 }
