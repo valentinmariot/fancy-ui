@@ -1,9 +1,9 @@
 import { Meta } from '@storybook/react';
-import A, { AProps } from "../../../components/atoms/document/a";
+import Link, { AProps } from "../../../components/atoms/document/link";
 
 export default {
-    title: "Atoms/Document/A",
-    component: A,
+    title: "Atoms/Document/Link",
+    component: Link,
     argTypes: {
         className: {
             control: {
@@ -28,7 +28,7 @@ export default {
     }
 } as Meta;
 
-const TemplatePlayground = (args:AProps) => <A {...args} />;
+const TemplatePlayground = (args:AProps) => <Link {...args} />;
 
 export const Playground = TemplatePlayground.bind({});
 

@@ -1,19 +1,19 @@
-import './a.scss';
+import './link.scss';
 
-export interface AProps {
+export interface LinkProps {
   className?: string,
   children: React.ReactNode,
   underline?: boolean,
   link?: string,
 }
 
-const A: React.FC<AProps> = ({
+const Link: React.FC<LinkProps> = ({
     className = '',
     children = 'link to',
     underline = false,
     link = '#'
 }) => {
-    const classes = `a-a ${underline ? 'a-a--ul' : ''} ${className}`.trim();
+    const classes = `link-a ${underline ? 'link-a--ul' : ''} ${className}`.trim();
 
     return (
         <a
@@ -28,4 +28,4 @@ const A: React.FC<AProps> = ({
     );
 };
 
-export default A;
+export default Link;
