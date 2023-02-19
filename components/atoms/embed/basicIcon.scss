@@ -1,0 +1,362 @@
+.bIcon {
+    align-items: center;
+    display: flex;
+    font-family: Icomoon, system-ui;
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+    line-height: 1;
+
+    &::before {
+        color: inherit;
+    }
+
+    // Sizes
+    &--medium {
+        padding: 5px;
+    }
+
+    &--large {
+        padding: 10px;
+    }
+
+    &--xlarge {
+        padding: 15px;
+    }
+    // -----------
+
+    // Colors
+    &--primary {
+        color: var(--primary);
+    }
+
+    &--secondary {
+        color: var(--secondary);
+    }
+
+    &--white {
+        color: var(--white);
+    }
+
+    &--black {
+        color: var(--black);
+    }
+
+    &--tertiary {
+        color: var(--tertiary);
+    }
+
+    &--valid {
+        color: var(--valid);
+    }
+
+    &--alert {
+        color: var(--alert);
+    }
+
+    &--info {
+        color: var(--info);
+    }
+
+    &--error {
+        color: var(--error);
+    }
+
+    &--auto {
+        color: inherit;
+    }
+    // -----------
+
+    // Box Colors
+
+    &--box {
+        border-radius: 4px;
+    }
+
+    &--box-primary {
+        background: var(--primary);
+    }
+
+    &--box-secondary {
+        background: var(--secondary);
+    }
+
+    &--box-white {
+        background: var(--white);
+    }
+
+    &--box-black {
+        background: var(--black);
+    }
+
+    &--box-tertiary {
+        background: var(--tertiary);
+    }
+
+    &--box-valid {
+        background: var(--valid);
+    }
+
+    &--box-alert {
+        background: var(--alert);
+    }
+
+    &--box-info {
+        background: var(--info);
+    }
+
+    &--box-error {
+        background: var(--error);
+    }
+    // -----------
+
+    // Icons
+    &--ico-archive::before {
+        content: '\e900';
+    }
+
+    &--ico-arrow::before {
+        content: '\e901';
+    }
+
+    &--ico-arrow-2::before {
+        content: '\e903';
+    }
+
+    &--ico-book::before {
+        content: '\e902';
+    }
+
+    &--ico-calendar::before {
+        content: '\e908';
+    }
+
+    &--ico-caret::before {
+        content: '\e909';
+    }
+
+    &--ico-centos::before {
+        content: '\e90b';
+    }
+
+    &--ico-check::before {
+        content: '\e90d';
+    }
+
+    &--ico-close::before {
+        content: '\e910';
+    }
+
+    &--ico-copy::before {
+        content: '\e911';
+    }
+
+    &--ico-core::before {
+        content: '\e912';
+    }
+
+    &--ico-create::before {
+        content: '\e913';
+    }
+
+    &--ico-data::before {
+        content: '\e904';
+    }
+
+    &--ico-day::before {
+        content: '\e905';
+    }
+
+    &--ico-debian::before {
+        content: '\e914';
+    }
+
+    &--ico-delete::before {
+        content: '\e915';
+    }
+
+    &--ico-disabled::before {
+        content: '\e916';
+    }
+
+    &--ico-disk::before {
+        content: '\e939';
+    }
+
+    &--ico-dissociate::before {
+        content: '\e917';
+    }
+
+    &--ico-download::before {
+        content: '\e918';
+    }
+
+    &--ico-edit::before {
+        content: '\e919';
+    }
+
+    &--ico-euro::before {
+        content: '\e91a';
+    }
+
+    &--ico-exclamation::before {
+        content: '\e906';
+    }
+
+    &--ico-eye::before {
+        content: '\e91b';
+    }
+
+    &--ico-favorite::before {
+        content: '\e91c';
+    }
+
+    &--ico-file::before {
+        content: '\e907';
+    }
+
+    &--ico-folder::before {
+        content: '\e91d';
+    }
+
+    &--ico-help::before {
+        content: '\e90a';
+    }
+
+    &--ico-help-2::before {
+        content: '\e90c';
+    }
+
+    &--ico-info::before {
+        content: '\e91e';
+    }
+
+    &--ico-ip::before {
+        content: '\e90e';
+    }
+
+    &--ico-key::before {
+        content: '\e91f';
+    }
+
+    &--ico-lock::before {
+        content: '\e920';
+    }
+
+    &--ico-lock-mini::before {
+        content: '\e921';
+    }
+
+    &--ico-mail::before {
+        content: '\e922';
+    }
+
+    &--ico-mail-2::before {
+        content: '\e923';
+    }
+
+    &--ico-network::before {
+        content: '\e924';
+    }
+
+    &--ico-night::before {
+        content: '\e90f';
+    }
+
+    &--ico-option::before {
+        content: '\e925';
+    }
+
+    &--ico-os::before {
+        content: '\e926';
+    }
+
+    &--ico-plus::before {
+        content: '\e927';
+    }
+
+    &--ico-plus-mini::before {
+        content: '\e928';
+    }
+
+    &--ico-profile::before {
+        content: '\e929';
+    }
+
+    &--ico-ram::before {
+        content: '\e92d';
+    }
+
+    &--ico-reload::before {
+        content: '\e92e';
+    }
+
+    &--ico-rename::before {
+        content: '\e92f';
+    }
+
+    &--ico-reset::before {
+        content: '\e92a';
+    }
+
+    &--ico-restart::before {
+        content: '\e930';
+    }
+
+    &--ico-server::before {
+        content: '\e92b';
+    }
+
+    &--ico-shield::before {
+        content: '\e931';
+    }
+
+    &--ico-shield-add::before {
+        content: '\e932';
+    }
+
+    &--ico-shield-mini::before {
+        content: '\e92c';
+    }
+
+    &--ico-shield-remove::before {
+        content: '\e933';
+    }
+
+    &--ico-start::before {
+        content: '\e934';
+    }
+
+    &--ico-state::before {
+        content: '\e936';
+    }
+
+    &--ico-tag::before {
+        content: '\e93a';
+    }
+
+    &--ico-talk::before {
+        content: '\e935';
+    }
+
+    &--ico-theme::before {
+        content: '\e93b';
+    }
+
+    &--ico-transfer::before {
+        content: '\e937';
+    }
+
+    &--ico-ubuntu::before {
+        content: '\e93c';
+    }
+
+    &--ico-usage::before {
+        content: '\e938';
+    }
+
+    &--ico-user::before {
+        content: '\e93d';
+    }
+}
